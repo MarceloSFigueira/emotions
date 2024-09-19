@@ -1,0 +1,231 @@
+.emotions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    height: 40vh;
+    position: absolute;
+    top: 60%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  .emotion-item {
+    position: relative;
+  }
+  
+  
+  .emotion-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .emotion-img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+    margin: -20px;
+  }
+  
+  .emotion-hover-img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: -290px;  
+    left: -40px; 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10; 
+  }
+  
+  .emotion-button:hover .emotion-hover-img {
+    opacity: 1;
+  }
+  
+  .emotion-button:hover .emotion-img {
+    transform: scale(1.1); 
+  }
+  
+  .medo .emotion-img {
+    height: 245px;
+    width: auto;
+
+  }
+
+  .ansiedade .emotion-img {
+    height: 200px;
+    width: auto;
+  }
+
+  .raiva .emotion-img {
+    height: 120px;
+    width: auto;
+
+  }
+  .nojinho .emotion-img {
+    height: 150px;
+    width: auto;
+    
+  }
+
+  .inveja .emotion-img {
+    height: 120px;
+    width: auto;
+
+  }
+  
+  .alegria .emotion-img {
+    height: 245px;
+    width: auto;
+
+  }
+  .tristeza .emotion-img {
+    height: 150px;
+    width: auto;
+
+  }
+  .vergonha .emotion-img {
+    height: 250px;
+    width: auto;
+
+  }
+  
+  .tedio .emotion-img {
+    height: 200px;
+    width: auto
+  }
+
+  .gradient-oval {
+    width: 88%;
+    height: 150px;
+    background: linear-gradient(90deg, rgba(14,27,89,1) 0%, rgba(154,37,173,1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;    
+    box-shadow: 30px 15px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;  
+  }
+
+  .logo{
+    margin-top: 40px;
+    width: 150px;
+    height: auto;
+  } 
+  
+
+  .raiva .emotion-hover-img {
+    top: -235px; /* Ajuste a altura do hover para 'Raiva' */
+}
+
+.inveja .emotion-hover-img {
+    top: -240px; /* Ajuste a altura do hover para 'Inveja' */
+}
+
+.tristeza .emotion-hover-img{
+  top: -240px;
+}
+
+.medo .emotion-hover-img {
+  top: -280px;
+  padding-left: 20px;
+}
+
+@media(max-width: 768px){
+  .emotions-container{
+    display: none;
+  } 
+}
+
+@media(min-width: 769px) {
+  .card-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .emotions-container {
+    display: none; /* Esconde a div original no mobile */
+  }
+
+  /* Centraliza a logo e ajusta o tamanho no mobile */
+  .logo-container {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Configura o layout dos cards no mobile */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .card {
+    width: calc(50% - 30px); 
+    height: 250px;
+    justify-content: flex-end;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    text-align:left ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .card img {
+    max-height: 180px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+  .card-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: 350;
+    position: relative;
+    bottom: 5px;
+  }
+  .Raiva img{
+    height: 120px;
+    margin-bottom: 40px;
+
+
+  }
+
+  .Nojinho img{
+    height: 160px;
+
+  }
+}

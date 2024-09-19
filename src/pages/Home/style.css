@@ -1,0 +1,94 @@
+/* Estilos para desktop */
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 4rem;
+  width: 35%;
+  line-height: 1.0;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.navigate-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #00e168;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.8s ease;
+  z-index: 99999;
+}
+
+.navigate-button:hover {
+  box-shadow: 0 0 50px rgba(0, 225, 104, 0.9);
+}
+
+.corner-image {
+  position: absolute;
+  width: 220px;
+  height: auto;
+}
+
+.top-left-image {
+  top: 0;
+  left: 0;
+}
+
+.top-right-image {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left-image {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right-image {
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .home-title {
+      font-size: 2.0rem; 
+      width: 70%;
+  }
+
+  .navigate-button {
+      padding: 10px 30px; 
+      font-size: 2rem; 
+      margin-top: -20px;
+    }
+
+  .corner-image {
+      width: 120px; /* Reduza o tamanho das imagens nas extremidades */
+  }
+
+  .color-balls-wrapper .color-ball {
+      width: 40px; /* Bolinhas menores para mobile */
+      height: 40px;
+  }
+
+  /* Ajustar o raio de movimentação das bolinhas para mobile */
+  .bottom-left-ball,
+  .bottom-left-ball-2,
+  .top-right-ball,
+  .top-right-ball-2,
+  .top-left-ball,
+  .bottom-right-ball {
+      animation-duration: 5s; 
+  }
+}
+

@@ -1,0 +1,114 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-box {
+    width: 600px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  
+ 
+  
+  /* Estilo para o botão */
+  .submit-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .logo-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;  
+
+  }
+
+  .logo{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 150px;
+    height: auto;
+  }
+
+  .emotion-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emotion-selection h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .emotion-selection h3{
+    font-size: 32px;
+    font-weight: 500;
+    background-color: #002bf4;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .label{
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .container-image-divertidamente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .submit-button{
+    border-radius: 20px;
+    background-color: #00e168;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.8s ease;
+
+  }
+
+  .submit-button:hover{
+    box-shadow: 0 0 40px rgba(0, 225, 104, 0.9);
+  }
+  
+  @media(max-width: 768px){
+    .form-box{
+      border: none;
+    } 
+
+    .image{
+      height:150px;
+    }
+  
+    .emotion-selection h2{
+      font-size: 32px;
+      
+    }
+    .emotion-selection h3{
+      font-size: 28px;
+      
+    }
+    .logo{
+      margin: 0;
+    }
+  }
